@@ -1,0 +1,126 @@
+<android.support.design.widget.CoordinatorLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".ProfileActivity">
+
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+        <RelativeLayout
+            android:id="@+id/topBar"
+            android:layout_width="match_parent"
+            android:layout_height="50dp"
+            android:layout_alignParentStart="true"
+            android:layout_alignParentTop="true"
+            android:layout_marginStart="0dp"
+            android:layout_marginTop="0dp">
+
+            <android.support.design.widget.AppBarLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content">
+
+
+            </android.support.design.widget.AppBarLayout>
+
+        </RelativeLayout>
+
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="50dp"
+            android:id="@+id/bottomBar"
+            android:layout_alignParentBottom="true">
+
+
+            <android.support.design.widget.BottomNavigationView
+                android:id="@+id/bottomNavView_Bar"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:background="@color/colorPrimary"
+                app:itemBackground="@color/colorPrimaryDark"
+                app:menu="@menu/bottom_navigation_menu">
+
+
+            </android.support.design.widget.BottomNavigationView>
+        </RelativeLayout>
+
+        <TextView
+            android:id="@+id/profileTrainerName"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentStart="true"
+            android:layout_alignParentTop="true"
+            android:layout_marginStart="28dp"
+            android:layout_marginTop="31dp"
+            android:text="TrainerName" />
+
+        <TextView
+            android:id="@+id/profileDogName"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/profileTrainerName"
+            android:layout_alignStart="@+id/profileTrainerName"
+            android:layout_marginStart="0dp"
+            android:layout_marginTop="19dp"
+            android:text="DogName" />
+
+        <TextView
+            android:id="@+id/profileDogRace"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/profileDogName"
+            android:layout_alignParentEnd="true"
+            android:layout_marginTop="-18dp"
+            android:layout_marginEnd="134dp"
+            android:text="DogRace" />
+
+        <EditText
+            android:id="@+id/textCopy"
+            android:layout_width="189dp"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/profileDogName"
+            android:layout_alignParentStart="true"
+            android:layout_marginStart="9dp"
+            android:layout_marginTop="291dp"
+            android:ems="10"
+            android:hint="Type dog snacks"
+            android:inputType="textPersonName" />
+
+        <Button
+            android:id="@+id/copyButton"
+            android:layout_width="wrap_content"
+            android:layout_height="45dp"
+            android:layout_below="@+id/profileDogRace"
+            android:layout_alignParentStart="true"
+            android:layout_alignParentEnd="true"
+            android:layout_marginStart="217dp"
+            android:layout_marginTop="291dp"
+            android:layout_marginEnd="18dp"
+            android:text="copy dog snacks" />
+
+        <TextView
+            android:id="@+id/textPaste"
+            android:layout_width="140dp"
+            android:layout_height="46dp"
+            android:layout_alignParentTop="true"
+            android:layout_marginStart="54dp"
+            android:layout_marginTop="453dp"
+            android:layout_toEndOf="@+id/pasteButton"
+            android:text="Favourite snack: " />
+
+        <Button
+            android:id="@+id/pasteButton"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/textCopy"
+            android:layout_alignParentStart="true"
+            android:layout_marginStart="23dp"
+            android:layout_marginTop="24dp"
+            android:text="paste dog snacks" />
+
+    </RelativeLayout>
+</android.support.design.widget.CoordinatorLayout>

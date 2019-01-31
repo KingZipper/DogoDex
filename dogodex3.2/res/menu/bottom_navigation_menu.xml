@@ -1,0 +1,40 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto">
+
+    <item
+        android:id="@+id/newsIcon"
+        android:icon="@drawable/news"
+        android:title="News"
+        />
+
+    <item
+        android:id="@+id/profileIcon"
+        android:icon="@drawable/achievement"
+        android:title="Profile"
+        app:showAsAction="ifRoom"
+        />
+
+    <item
+        android:id="@+id/mapIcon"
+        android:icon="@drawable/mapicon"
+        android:title="Map"
+        app:showAsAction="ifRoom"
+        />
+
+    <item
+        android:id="@+id/friendsIcon"
+        android:icon="@drawable/friends"
+        android:title="Friends"
+        app:showAsAction="ifRoom"
+        />
+
+    <item
+        android:id="@+id/settingsIcon"
+        android:icon="@drawable/settingsicon"
+        android:title="Info"
+        app:showAsAction="ifRoom"
+        />
+
+
+</menu>
